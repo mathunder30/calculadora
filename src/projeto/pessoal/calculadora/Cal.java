@@ -1,7 +1,7 @@
 package projeto.pessoal.calculadora;
 
 import java.util.Scanner;
-//
+
 public class Cal{
     public static double soma(double num1,double num2) {
         return num1 + num2;
