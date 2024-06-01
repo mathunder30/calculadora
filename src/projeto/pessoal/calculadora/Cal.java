@@ -1,7 +1,8 @@
+//projeto de calculadora simples onde as contas são feitas no terminal
 package projeto.pessoal.calculadora;
 
 import java.util.Scanner;
-
+//definindo as operações basicas como somar, subtrair, multiplicar e dividir
 public class Cal{
     public static double soma(double num1,double num2) {
         return num1 + num2;
@@ -18,15 +19,13 @@ public class Cal{
 
     public static void main(String[] args) {
 
-    
+    // defirnir a vareavel calculadorNum como verdadeiro (true) serve para usar para funcionar a repetição (while)
         boolean calculadoraNum = true;
         Scanner scan = new Scanner(System.in);
 
-       
-
-
+    // while como processo de repetição para sempre voltar as opções.
         while (calculadoraNum) {
-
+    //usei print para imprimir no terminal as opções.
         System.out.println("\n opções: ");
         System.out.println("1. SOMAR ");
         System.out.println("2. SUBTRAIR");
@@ -34,7 +33,7 @@ public class Cal{
         System.out.println("4. DIVIDIR");
         System.out.println("5. SAIR");
         int operacao = scan.nextInt();
-
+    //primeiro if é para usar a opção saida.
         if (operacao == 5) {
             calculadoraNum = false;
             System.out.println("saindo...");
@@ -42,9 +41,8 @@ public class Cal{
 
             
         } 
-
-
-
+        
+    // usei condição para escolher determinada opção
         if (operacao == 1) {
            System.out.println("digite um numero: ");
            double num1 = scan.nextDouble();
