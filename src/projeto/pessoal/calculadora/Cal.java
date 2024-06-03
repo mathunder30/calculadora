@@ -86,10 +86,6 @@ public class Cal{
 
        
     }
-        
-
-
-
         scan.close();
     }
 
