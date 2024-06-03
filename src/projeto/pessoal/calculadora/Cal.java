@@ -70,7 +70,18 @@ public class Cal{
             double num1 = scan.nextDouble();
             System.out.println("digite o segundo numero: ");
             double num2 = scan.nextDouble();
-            System.out.println("O resultado de "+num1+" dividido por "+ num2 + " é: "+ divisao(num1, num2));
+           //uso as condições para caso o numero dividendo for igual a zero, não realizar a operaçã0
+             if (num2 != 0) {
+            System.out.println("O resultado de "+ num1+" dividindo por "+ num2 + " é: "+ divisao(num1, num2));
+
+                
+                
+             } else if (num2 == 0){
+                System.out.println("Erro: divisão por zero não é permitida!");
+
+
+             }
+             
             
         } else if (operacao != 1 && operacao != 2 && operacao != 3 && operacao != 4 && operacao != 5){
             System.out.println("DADOS NÃO ENCONTRADOS, TENTE NOVAMENTE!!");
