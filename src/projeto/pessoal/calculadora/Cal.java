@@ -74,13 +74,10 @@ public class Cal{
              if (num2 != 0) {
             System.out.println("O resultado de "+ num1+" dividindo por "+ num2 + " é: "+ divisao(num1, num2));
 
-                
-                
-             } else if (num2 == 0){
+            } 
+             else if (num2 == 0){
                 System.out.println("Erro: divisão por zero não é permitida!");
-
-
-             }
+            }
              
             
         } else if (operacao != 1 && operacao != 2 && operacao != 3 && operacao != 4 && operacao != 5){
